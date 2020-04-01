@@ -26,10 +26,12 @@ header
     text-decoration: none
     color: $mainFontColor
     transition: 100ms
-    &:hover
-      transition: 100ms
-      color: $primary-color
-      text-decoration: underline
+  @media screen and (min-width: $smDesktopWidth)
+    & a
+      &:hover
+        transition: 100ms
+        color: $primary-color
+        text-decoration: underline
   @media screen and (max-width: $smDesktopWidth)
     position: fixed
     height: 100vh
