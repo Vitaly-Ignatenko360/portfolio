@@ -1,11 +1,14 @@
 // JS
-// import "./js/";
+import "./js/";
 
 // SASS
-import "./assets/sass/main.sass";
+import './assets/sass/main.sass'
 
 // CSS (example)
 // import './assets/css/main.css'
+
+// FONTS
+import './assets/fonts/Lato/stylesheet.css'
 
 // // Vue.js
 // window.Vue = require("vue");
