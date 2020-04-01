@@ -1,0 +1,34 @@
+header
+  border-bottom: 1px solid $MainBorderColor
+  position: fixed
+  background: $default-color
+  z-index: 1
+  width: 100%
+  
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.logo__img
+  width: 50%
+
+.menu__content
+  & ul
+    display: flex
+    flex-wrap: wrap
+    font-size: $mainFontSizeMini
+    font-weight: $mainFontWeightBold
+    text-transform: uppercase;
+  & li
+    margin-left: 20px
+  & a
+    text-decoration: none
+    color: $mainFontColor
+  @media screen and (max-width: $smDesktopWidth)
+    display: none
+
+.menu__mobill
+  display: none
+  @media screen and (max-width: $smDesktopWidth)
+    display: flex

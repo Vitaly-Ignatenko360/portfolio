@@ -9,6 +9,8 @@ import './assets/sass/main.sass'
 
 // FONTS
 import './assets/fonts/Lato/stylesheet.css'
+import './assets/fonts/Roboto/stylesheet.css'
+import './assets/fonts/fontello/css/fontello.css'
 
 // // Vue.js
 // window.Vue = require("vue");
