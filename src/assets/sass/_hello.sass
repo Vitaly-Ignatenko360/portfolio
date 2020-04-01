@@ -12,7 +12,7 @@
     &::after
       position: absolute
       content: '.'
-      color: #3333ff
+      color: $primary-color
   & p
     opacity: 0.8
     font-size: $mainFontSize
@@ -51,11 +51,15 @@
     text-transform: uppercase
     line-height: $mainLineHeight
     margin-right: 10px
-
-  & a
+  & a, .info__address
     font-family: $mainFontFamily
     font-size: $mainFontSizeMiniPro
     line-height: $mainLineHeight
+    color: $mainFontColor
+    opacity: 0.8
+    &:hover
+      transition: 100ms
+      color: $primary-color
 
 .hello__btn
   & a
@@ -65,7 +69,10 @@
     font-family: $mainFont
     padding: 15px
     text-align: center
-
+    transition: 200ms
+    &:hover
+      transition: 200ms
+      box-shadow: 10px 10px 20px $box-shadow-actin 
   @media screen and (max-width: $tableWidth)
     display: flex
     flex-direction: column
@@ -82,3 +89,12 @@
 .grey-btn
   background-color: $border-posiv
   color: $neutral-primary
+
+.info__contact_network
+  & a
+    color: $mainFontColor
+    opacity: 1
+    transition: 100ms
+    &:hover
+      transition: 100ms
+      color: $primary-color

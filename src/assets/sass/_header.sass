@@ -4,7 +4,7 @@ header
   background: $default-color
   z-index: 1
   width: 100%
-  
+
 .menu
   display: flex
   justify-content: space-between
@@ -19,16 +19,54 @@ header
     flex-wrap: wrap
     font-size: $mainFontSizeMini
     font-weight: $mainFontWeightBold
-    text-transform: uppercase;
+    text-transform: uppercase
   & li
     margin-left: 20px
   & a
     text-decoration: none
     color: $mainFontColor
+    transition: 100ms
+    &:hover
+      transition: 100ms
+      color: $primary-color
+      text-decoration: underline
   @media screen and (max-width: $smDesktopWidth)
-    display: none
+    position: fixed
+    height: 100vh
+    background: $primary-color
+    top: -100%
+    left: 0
+    right: 0
+    transition: 500ms
+    display: flex
+    justify-content: center
+    align-items: center
+    & ul
+      flex-direction: column
+    & li
+      margin-left: 0
+      padding-bottom: 30px
+      text-align: center
+    & a
+      color: $default-color
 
 .menu__mobill
   display: none
   @media screen and (max-width: $smDesktopWidth)
     display: flex
+
+.menu__content_active
+  position: fixed
+  height: 100vh
+  top: 0
+  left: 0
+  right: 0
+
+.menu__mobill_cancel
+  display: none
+  @media screen and (max-width: $smDesktopWidth)
+    display: flex
+    position: absolute
+    top: 25px
+    right: 25px
+    color: $default-color

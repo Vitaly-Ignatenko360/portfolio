@@ -1,5 +1,5 @@
 // JS
-import "./js/";
+import "./js/index";
 
 // SASS
 import './assets/sass/main.sass'
